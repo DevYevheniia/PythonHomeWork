@@ -8,10 +8,10 @@ class Human:
             self, gender: str, age: int, first_name: str,
             last_name: str
     ) -> None:
-        self.gender: str = gender
-        self.age: int = age
-        self.first_name: str = first_name
-        self.last_name: str = last_name
+        self.gender = gender
+        self.age = age
+        self.first_name = first_name
+        self.last_name = last_name
 
     def __str__(self) -> str:
         """
@@ -35,7 +35,7 @@ class Student(Human):
             last_name: str, record_book: str
     ) -> None:
         super().__init__(gender, age, first_name, last_name)
-        self.record_book: str = record_book
+        self.record_book = record_book
 
     def __str__(self) -> str:
         """
@@ -50,7 +50,7 @@ class Group:
     """
 
     def __init__(self, number: str) -> None:
-        self.number: str = number
+        self.number = number
         self.group = set()
 
     def add_student(self, student: Student) -> None:

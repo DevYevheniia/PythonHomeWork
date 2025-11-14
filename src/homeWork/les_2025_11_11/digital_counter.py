@@ -14,9 +14,9 @@ class Counter:
         max_value: Maximum value
         ValueError: If current is outside the range [min_value, max_value]
         """
-        self.current: int = current
-        self.min_value: int = min_value
-        self.max_value: int = max_value
+        self.current = current
+        self.min_value = min_value
+        self.max_value = max_value
         if current < min_value or current > max_value:
             raise ValueError("The current value is outside the minimum or maximum limits.")
 
